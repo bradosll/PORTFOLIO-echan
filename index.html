@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio of Christian P. Deldacan - IT Specialist, Digital Artist (Canva), CSS NC II Certified, and IoT Builder.">
+    <meta name="keywords"
+        content="Christian Deldacan, Deldacan, Portfolio, Computer Systems Servicing, CSS NC II, Digital Artist, Canva, IoT, DNSC, Tagum City">
+    <meta name="author" content="Christian P. Deldacan">
+    <title>Christian P. Deldacan | IT Specialist, Digital Artist & IoT Builder</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Advanced Fluid Flow Field -->
+    <canvas id="flow-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span>DELDACAN</span><span class="dot">.</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Asymmetric Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-split">
+                    <div class="hero-content reveal-left">
+                        <h1 class="hero-title">
+                            Empowering Ideas Through <span class="gradient-text">Design & IoT</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Hi, I'm <span class="highlight">Christian P. Deldacan</span>. I specialize in crafting
+                            digital designs, configuring Computer Systems (CSS NC II), and building smart Internet of
+                            Things integrations.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Projects<i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal-right">
+                        <!-- 3D Interactive Card Showcase -->
+                        <div class="interactive-tilt-card" id="hero-tilt-card">
+                            <div class="card-inner">
+                                <div class="card-glass"></div>
+                                <div class="card-glow-point"></div>
+                                <div class="card-content">
+                                    <div class="tech-icon-cloud">
+                                        <div class="cloud-item item-canva"><i class="fa-solid fa-palette"></i>
+                                            <span>Canva Designer</span>
+                                        </div>
+                                        <div class="cloud-item item-network"><i class="fa-solid fa-network-wired"></i>
+                                            <span>CSS NC II</span>
+                                        </div>
+                                        <div class="cloud-item item-iot"><i class="fa-solid fa-microchip"></i> <span>IoT
+                                                Engineer</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="about-image-card">
+                            <img src="assets/christian.png" alt="Christian Deldacan Portrait" class="about-avatar">
+                            <div class="glow-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-right">
+                        <h3 class="about-greeting">Integrating Hardware Solutions with Digital Art</h3>
+                        <p class="about-bio">
+                            I am an Information Technology student at Davao del Norte State College, based in Tagum
+                            City. I merge analytical troubleshooting with creative layout design. With background in
+                            digital tools and physical hardware config, I build reliable, eye-catching integrations.
+                        </p>
+                        <p class="about-bio">
+                            My expertise covers computer systems servicing, local networking setups, and connecting
+                            everyday appliances through ESP32/Arduino microcontrollers, all while developing visual
+                            branding kits using Canva.
+                        </p>
+
+                        <!-- Core Competency Grid -->
+                        <div class="skills-wrapper">
+                            <h4 class="skills-title">Core Competencies</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card"
+                                    data-tooltip="Branding Layouts, Mockups, Social Media Graphic Designs">
+                                    <div class="skill-icon"><i class="fa-solid fa-image"></i></div>
+                                    <span class="skill-name">Digital Artist</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="Computer Assembly, OS Installation, Troubleshooting, LAN Config">
+                                    <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                    <span class="skill-name">CSS NC II</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="ESP32/ESP8266, Sensor Telemetry, Arduino IDE, Home Automation">
+                                    <div class="skill-icon"><i class="fa-solid fa-wifi"></i></div>
+                                    <span class="skill-name">Basic IoT</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="Responsive HTML/CSS structures & Javascript interactions">
+                                    <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                                    <span class="skill-name">Web Basics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Digital Art (Canva Designer)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Computer Systems & Networking (CSS NC II)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>IoT Integration & Microcontrollers</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Journey Timeline -->
+                <div class="about-journey-wrapper reveal-up">
+                    <div class="timeline-container">
+                        <h3 class="timeline-section-title"><i class="fa-solid fa-route"></i> Work & Experience Journey
+                        </h3>
+
+                        <div class="journey-timeline">
+                            <!-- Timeline Item 1 -->
+                            <div class="journey-item reveal-up">
+                                <div class="journey-badge">2026</div>
+                                <div class="journey-connector">
+                                    <div class="connector-dot"></div>
+                                    <div class="connector-line"></div>
+                                </div>
+                                <div class="journey-card">
+                                    <div class="journey-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <h4 class="journey-role">On-the-Job Trainee</h4>
+                                    <span class="journey-org">Management Information System (MIS) Office – City
+                                        Government of Tagum</span>
+                                    <p class="journey-desc">
+                                        Assisted the IT Division in managing municipal network infrastructure, setting
+                                        up Local Area Networks (LAN) across offices, troubleshooting hardware units,
+                                        performing system backups, and installing utility packages for municipal
+                                        workers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Certificates</span>
+                    <h2 class="section-title">Verified Credentials</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Certificate 1: TESDA NCII -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/deldacanojt.jpg" alt="TESDA Computer Systems Servicing NC II"
+                                    class="cert-img">
+                            </div>
+                            <div class="cert-tag">OJT Certificate</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">OJT Certificate of Completion</h3>
+                            <span class="cert-issuer">DAVAO DE ORO - Provincial Information, Communication, and
+                                Technology
+                                Office (PICTO)</span>
+                            <p class="cert-description">
+                                Recognizes the successful completion of the On-the-Job Training program, providing
+                                hands-on experience in information and communications technology services, network
+                                support, technical troubleshooting, and ICT infrastructure operations within a
+                                professional workplace setting.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: OJT Completion -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/certificate of completion.png" alt="OJT Completion Certificate"
+                                    class="cert-img">
+                            </div>
+                            <div class="cert-tag">Capstone Completion</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title-text">Capstone Completion Certificate</h3>
+                            <span class="cert-issuer">Municipality of Asuncion</span>
+                            <p class="cert-description">Validates successful completion and presentation
+                                of the capstone project "Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development".</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: Cisco Networking -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/deldacanhacker.png" alt="Cisco Networking Essentials" class="cert-img">
+                            </div>
+                            <div class="cert-tag">Cisco Academy</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Cisco Ethical Hacker & Network Security</h3>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <p class="cert-text">Covers structural IP mapping, vulnerability scans, wireless access
+                                security configurations, and defense mechanisms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4: Capstone Exhibit -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/certificate of parcitipation.png" alt="Capstone Exhibit Certificate"
+                                    class="cert-img">
+                            </div>
+                            <div class="cert-tag">Participation</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Capstone Project Participation</h3>
+                            <span class="cert-issuer">DNSC Institute of Computing</span>
+                            <p class="cert-text">Awarded for active presentation of collaborative technology systems and
+                                capstone solutions during the annual exhibit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Projects</span>
+                    <h2 class="section-title">My Recent Creations</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Modern Project Filters -->
+                <div class="project-filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="iot">Web Development</button>
+                    <button class="filter-btn" data-filter="art">Digital Art</button>
+                    <button class="filter-btn" data-filter="it">IT Systems</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: IoT SmartTemp Monitor -->
+                    <div class="project-card reveal-up" data-category="iot">
+                        <div class="project-media">
+                            <img src="assets/GAD.png" alt="SmartTemp IoT System" class="project-img">
+                            <div class="project-glass-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="Github Repo"><i
+                                            class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Details"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-card-title">Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development</h3>
+                            <p class="project-desc">
+                                A web-based Planning and Budgeting Management System that integrates geospatial mapping
+                                and K-Means clustering to support Gender and Development (GAD) planning, budget
+                                allocation, project monitoring, and data-driven decision-making for local government
+                                units.
+                            </p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>K-Means</span>
+                                <span>Geospatial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Canva Branding Toolkit -->
+                    <div class="project-card reveal-up" data-category="art">
+                        <div class="project-media">
+                            <img src="assets/scanease.png" alt="Canva Digital Art Kit" class="project-img">
+                            <div class="project-glass-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="Behance Showcase"><i
+                                            class="fa-brands fa-behance"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Details"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Web Application</span>
+                            <h3 class="project-card-title">ScanEase</h3>
+                            <p class="project-desc">
+                                A document scanning and management system designed to simplify file digitization,
+                                organization, and retrieval. The system provides an efficient way to manage scanned
+                                documents and improve accessibility of digital records.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info-panel reveal-left">
+                        <h3 class="info-title">Let's Connect</h3>
+                        <p class="info-text">
+                            Whether you need customized Canva layouts, local computer repairs, server configurations, or
+                            smart IoT modules—I am ready to help you build it!
+                        </p>
+
+                        <div class="details-list">
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Email Address</span>
+                                    <a href="mailto:deldacan.christian@dnsc.edu.ph"
+                                        class="detail-value">deldacan.christian@dnsc.edu.ph</a>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Contact Number</span>
+                                    <a href="tel:09640808753" class="detail-value">0964 080 8753</a>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Address</span>
+                                    <p class="detail-value">Prk. 1-A Rizal Canocotan Tagum City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container reveal-right">
+                        <div class="form-wrapper">
+                            <form id="portfolio-contact-form" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="user-name">Your Name</label>
+                                        <input type="text" id="user-name" required placeholder="John Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-email">Email Address</label>
+                                        <input type="email" id="user-email" required placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="msg-subject">Subject</label>
+                                    <input type="text" id="msg-subject" required
+                                        placeholder="Project Inquiry / Collaboration">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-msg">Your Message</label>
+                                    <textarea id="user-msg" rows="5" required
+                                        placeholder="Write your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+
+                            <!-- Success State Modal Overlay Inside Form Container -->
+                            <div id="form-success-overlay" class="form-overlay-modal">
+                                <div class="overlay-inner-card">
+                                    <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                    <h4 class="overlay-success-title">Message Sent!</h4>
+                                    <p class="overlay-success-text">Thank you, Christian has received your inquiry and
+                                        will respond to you shortly.</p>
+                                    <button id="overlay-close" class="btn btn-primary">Okay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Zoom Lightbox Modal for Certificates -->
+    <div id="cert-lightbox" class="cert-modal">
+        <div class="cert-modal-content">
+            <button id="cert-lightbox-close" class="cert-modal-close" aria-label="Close modal">&times;</button>
+            <img id="cert-lightbox-img" src="" alt="Certificate Zoom" class="cert-modal-img">
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
